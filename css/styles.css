@@ -47,9 +47,11 @@ address {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container{
-    width: 1170px;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin:0 auto;
@@ -98,12 +100,13 @@ color: var(--accent-color);
 .hero {
     background-color:#2F303A ;
     text-align: center;
-    margin-bottom: 107px;
-}
+   }
 .hero-title {
     margin-bottom: 30px;
     
     color: var(--white-color);
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -121,6 +124,18 @@ color: var(--accent-color);
     text-align: center;
     letter-spacing: 0.03em;
   }
+  .visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
 /* Features */
 .feature .title {
     color: var(--title-text-color);
@@ -135,9 +150,16 @@ color: var(--accent-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
  }
+ .feature-box{
+    display: flex;
+    gap: 30px;
+ }
 
 /* Examles */
-
+.examples-box{
+    display: flex;
+    gap: 30px;
+}
 /* Team */
 .section.team {
     background-color: var(--secondary-color-fon);
@@ -154,12 +176,17 @@ color: var(--accent-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-}
+    }
+    .team-box{
+        display: flex;
+        gap: 30px;
+    }
 /* Button */
 .button {
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;
+    margin: 0 auto;
     min-width: 216px;
     text-align: center;
     border: 0px;
@@ -211,11 +238,20 @@ color: var(--accent-color);
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+.filter-box{
+    display: flex;
+}
 .portfolio .link {
     color: var(--primari-text-color);
     text-decoration: none;
+
+ 
 }
 .portfolio .title {
+   display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 4px;
+        
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -223,6 +259,20 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
 }
 .portfolio .text {
+   padding-bottom: 20px;
+    
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+.portfolio-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-item{
+     
+     
+    width: calc(100%-60px/3);
+    background: #FFFFFF;
+    outline: 1px solid #EEEEEE;
 }
