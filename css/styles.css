@@ -55,7 +55,7 @@ img {
     padding-right: 15px;
     padding-left: 15px;
     margin:0 auto;
-    outline: 2px solid tomato;
+   
    }
 /* Site heder */
 .logo {
@@ -127,6 +127,10 @@ color: var(--accent-color);
     gap: 50px;
 
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 /* Hero */
 .hero {
     height: 600px;
@@ -145,8 +149,7 @@ color: var(--accent-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    outline: 2px solid tomato;
-}
+    }
 .hero .button{
     margin-top: 30px;
 }
@@ -192,9 +195,10 @@ color: var(--accent-color);
  }
  .feature-box{
     display: flex;
-    padding-top: 107px;
-    padding-bottom: 94px;
     gap: 30px;
+ }
+ .section.feature-section{
+    padding-bottom: 0;
  }
 
 /* Examles */
@@ -202,7 +206,7 @@ color: var(--accent-color);
     display: flex;
     margin-top: 50px;
     gap: 30px;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 }
 /* Team */
 .section.team {
@@ -226,7 +230,7 @@ color: var(--accent-color);
     .team-box{
         display: flex;
         margin-top: 50px;
-        padding-bottom: 94px;
+        /* padding-bottom: 94px; */
         gap: 30px;
     }
     .team-card{
@@ -261,6 +265,10 @@ color: var(--accent-color);
 /* Footer */
 .footer {
     background-color:#2F303A ;
+        }
+.footer-box{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer.logo {
     color:var(--white-color);
@@ -273,20 +281,35 @@ color: var(--accent-color);
 }
 .adress-link, 
 .adress .link {
+    display: inline-block;
+    padding-top: 9px;
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
 }
+.footer .logo{
+ padding-top: 20px;
+ margin-bottom: 20px;
+
+}
+.adress-link{
+    display: inline-block;
+    padding-top: 20px;
+}
 /* Porfolio */
 
 /* Filter */
 .button.filter {
+   padding: 6px 25px;
+   
     cursor: pointer;
     
     color: var(--title-text-color);
     font-family: inherit;
     background-color: var(--secondary-color-fon) ;
+    min-width: 81px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -299,18 +322,16 @@ color: var(--accent-color);
 }
 .filter-box{
     display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    gap: 8px;
 }
 .portfolio .link {
     color: var(--primari-text-color);
     text-decoration: none;
-
- 
 }
 .portfolio .title {
-   display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 4px;
-        
+
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -318,8 +339,6 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
 }
 .portfolio .text {
-   padding-bottom: 20px;
-    
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
@@ -328,10 +347,8 @@ color: var(--accent-color);
     flex-wrap: wrap;
     gap: 30px;
 }
-.portfolio-item{
-     
-     
-    width: calc(100%-60px/3);
-    background: #FFFFFF;
-    outline: 1px solid #EEEEEE;
+.portfolio-text{
+width: 370px;
+padding: 20px 24px; 
+border: 1px solid #EEEEEE;
 }
