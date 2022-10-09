@@ -66,10 +66,17 @@ img {
     text-decoration: none;
     letter-spacing: 0.03em;
   }
-.logo.web {
+.logo-nav .logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+  .logo.web {
   color: var(--accent-color);  
 }
 .site-nav .link {
+   padding-top: 32px;
+   padding-bottom: 32px;
+   
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -84,7 +91,19 @@ img {
 .site-nav .link.current {
 color: var(--accent-color);
 }
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+    gap: 50px;
+    }
+.logo-nav {
+    display: flex;
+}
 .contacts .link {
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    
     color: var(--primari-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -96,14 +115,28 @@ color: var(--accent-color);
 .contacts .link:focus {
     color: var(--accent-color);
 }
+.container-nav{
+    display: flex;
+    align-items: center;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+    gap: 50px;
+
+}
 /* Hero */
 .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 187px;
+
     background-color:#2F303A ;
     text-align: center;
    }
-.hero-title {
-    margin-bottom: 30px;
-    
+    .hero-title{
     color: var(--white-color);
     width: 696px;
     margin: 0 auto;
@@ -114,7 +147,9 @@ color: var(--accent-color);
     text-transform: uppercase;
     outline: 2px solid tomato;
 }
-
+.hero .button{
+    margin-top: 30px;
+}
 /* Section */
 .section-title {
     color: var(--title-text-color);
@@ -136,8 +171,13 @@ color: var(--accent-color);
       clip-path: inset(50%);
       margin: -1px;
   }
+  .feature-box{
+    
+  }
 /* Features */
 .feature .title {
+    margin-bottom: 10px;
+    
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -152,18 +192,24 @@ color: var(--accent-color);
  }
  .feature-box{
     display: flex;
+    padding-top: 107px;
+    padding-bottom: 94px;
     gap: 30px;
  }
 
 /* Examles */
 .examples-box{
     display: flex;
+    margin-top: 50px;
     gap: 30px;
+    padding-bottom: 94px;
 }
 /* Team */
 .section.team {
     background-color: var(--secondary-color-fon);
-}
+  }
+
+    
 .team .title {
     color: var(--title-text-color);
     font-weight: 500;
@@ -179,8 +225,21 @@ color: var(--accent-color);
     }
     .team-box{
         display: flex;
+        margin-top: 50px;
+        padding-bottom: 94px;
         gap: 30px;
     }
+    .team-card{
+        background: #FFFFFF;
+        outline: 1px solid #EEEEEE;
+        }
+    .team-card .title{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }    
+    .team-card .text{
+        padding-bottom: 30px;
+    } 
 /* Button */
 .button {
     cursor: pointer;
