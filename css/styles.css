@@ -103,6 +103,7 @@ img {
   display: flex;
 }
 .contacts .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -237,12 +238,15 @@ img {
   outline: 1px solid #eeeeee;
 }
 .team-card .title {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
-.team-card .text {
-  padding-bottom: 30px;
-}
+/* .team-card .text {
+  padding-bottom: 30px; */
+
+  .team-information{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 /* Button */
 .button {
   cursor: pointer;
@@ -280,25 +284,19 @@ img {
 }
 .adress-link,
 .adress .link {
-  display: inline-block;
-  padding-top: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
-.footer .logo {
-  padding-top: 20px;
+.footer.logo {
+  display: block;
   margin-bottom: 20px;
 }
-.adress-link {
-  display: inline-block;
-  padding-top: 20px;
-}
-/* Porfolio */
 
-/* Filter */
+.link-footer:not(:last-child){
+margin-bottom: 9px;
+}
 .button.filter {
   padding: 6px 25px;
 
@@ -329,6 +327,8 @@ img {
   text-decoration: none;
 }
 .portfolio .title {
+  margin-bottom: 4px;
+  
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
