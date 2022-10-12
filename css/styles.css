@@ -244,8 +244,8 @@ img {
   padding-bottom: 30px; */
 
   .team-information{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 /* Button */
 .button {
@@ -348,4 +348,5 @@ margin-bottom: 9px;
   width: 370px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
